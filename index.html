@@ -1,0 +1,283 @@
+<html>
+<head>
+<title>
+About Me
+</title>
+
+<!---BACKGROUND COLOR--->
+
+<link href="ASSEST/CSS/style.css" rel="stylesheet" type="text/css" href="styles.css">
+
+<head>
+<link rel="icon" href="ASSEST/IMAGE/gif_totoro.gif" type="image/gif">
+</head>
+
+</head>
+<body>
+
+<a name="Top_Page"> </a>
+
+<!---Header Button--->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-size: 20px;
+  font-family: Comic sans ms, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: purple;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #211522;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: White;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: purple;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: purple;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>ٱلسَّلَامُ عَلَيْكُمْ</h2>
+  <p>(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧	</p>
+</div>
+
+<div id="navbar">
+  <a class="active" href="index.html">Home</a>
+  <a href="my_family.html">Family</a>
+  <a href="my_education.html">Education</a>
+  <a href="my_hobby.html">Hobby</a>
+  <a href="my_experience.html">Experience</a>
+  <a href="skills.html">Skills</a>
+  <a href="my_favorite.html">Favorite</a>
+  <a href="appreciation.html">Appreciation</a>
+  <a target="_blank" href="music.html">Music</a>
+  
+ </div>
+
+<center><a target="_blank" href="ASSEST/IMAGE/gif_totoro.gif"> <img src="ASSEST/IMAGE/gif_totoro.gif" width="60px" alt="Totoro"> </a><center/>
+
+<div class="content">
+ <center> <h3>Hello!</h3>
+  <p>My name is Nurul Aqilah</p> </center>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+<!---Intro Scrolling--->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Comic sans ms", sans-serif;
+  color: #211522;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("ASSEST/IMAGE/BukuKopi.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("ASSEST/IMAGE/flower.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("ASSEST/IMAGE/cat.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border"><image src="ASSEST/IMAGE/gif_kon.gif"></span>
+  </div>
+</div>
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">Welcome!</h3>
+  <center><p>Let's explore my little website</p></center>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">"It is only with the heart that one can see rightly; what is essential is invisible to the eye" -The Little Prince</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <center><p>اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ</p></center>
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">“Guide Us To The Straight Path” – Surah Fatiha Ayat 6</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <center><p>"Ikhlas dan sejati akan bertemu di dalam senyuman anak kecil, senyum yang sebenarnya senyum, senyum yang tidak disertai apa-apa" -Buya Hamka-</p></center>
+  </div>
+</div>
+
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border">العصر<span>
+  </div>
+</div>
+
+<!--- TO CALL THE CSS --->
+<center><div id="clock">8:10:45</div></center>
+
+<!--- TO LINK FOR A CURRENT TIME --->
+<script src="clock2.js"></script>
+
+<center><font color="Black"><b><p><a target="_blank" href="music.html">Let's listen to some music while we explore!</a></p></b></center>
+
+<a href="#Top_Page">
+<marquee direction="up">
+<center><img src="ASSEST/IMAGE/gif_noface.gif" width="100px"></center>
+<align="right"></marquee></center></a>
+<p><font color="black">"let's go up"-no face-<font color="black"></p></center>
+
+
+<br><br><br><br>
+<!--- MARQUEE --->
+<br><br><br><br>
+<hr><font color="purple">
+<marquee><scrollamount="3.5"><behavior="alternate"><h1> Thank you for scrolling, have a nice day ✲ﾟ｡.(✿╹◡╹)ﾉ☆.｡₀:*ﾟﾟ*:₀｡</h1><loop></marquee>
+<hr>
+<br><br>
+
+<script>
+setInterval(showTime, 1000);
+function showTime() {
+    let time = new Date();
+    let hour = time.getHours();
+    let min = time.getMinutes();
+    let sec = time.getSeconds();
+    am_pm = "AM";
+  
+    if (hour > 12) {
+        hour -= 12;
+        am_pm = "PM";
+    }
+    if (hour == 0) {
+        hr = 12;
+        am_pm = "AM";
+    }
+  
+    hour = hour < 10 ? "0" + hour : hour;
+    min = min < 10 ? "0" + min : min;
+    sec = sec < 10 ? "0" + sec : sec;
+  
+    let currentTime = hour + ":" 
+            + min + ":" + sec + am_pm;
+  
+    document.getElementById("clock")
+            .innerHTML = currentTime;
+}
+showTime();
+</script>
+
+</body>
+</html>

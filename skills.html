@@ -1,0 +1,247 @@
+<html>
+<head>
+<title>
+Skills 
+</title>
+<head>
+<link rel="icon" href="ASSEST/IMAGE/gif_totoro.gif" type="image/gif">
+</head>
+<body>
+
+<!---BACKGROUND COLOR--->
+
+<link href="ASSEST/CSS/style.css" rel="stylesheet" type="text/css" href="styles.css">
+
+<!---BACKGROUND COLOR--->
+
+<a target="_blank" href="ASSEST/IMAGE/gif_totoro.gif"> <img src="ASSEST/IMAGE/gif_totoro.gif" width="60px" alt="Totoro"> </a>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #D3B1C2;
+  padding: 20px;
+  font-family: comic sans ms;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+h2 {
+  font-size: 20px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #F2E4CF;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<center><h1>Skills worth honing</h1></center>
+<hr>
+
+<h2>"Jangan takut jatuh, kerana yang tidak pernah memanjatlah yang tidak pernah jatuh. Yang takut gagal, kerana yang tidak pernah gagal hanyalah orang-orang yang tidak pernah melangkah. Jangan takut salah, kerana dengan kesalahan yang pertama kita dapat menambah pengetahuan untuk mencari jalan yang benar pada langkah yang kedua"-Buya Hamka</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('nature')"> From YouTube </button>
+  <button class="btn" onclick="filterSelection('cars')"> From Books</button>
+  <button class="btn" onclick="filterSelection('people')"> From Podcasts</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/gyRjZ8rykXo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <h4>Understanding the Quran</h4>
+      <p>Practical Tips from Dr. Haifaa Younis | Jannah Institute |</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/7S28dshMoac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <h4>5 Things You Should Do Everyday</h4>
+      <p>Tips To Change Your Life from Omar Suleiman</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/Ge7c7otG2mk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <h4>Learning a language?</h4>
+      <p>Speak it like you’re playing a video game | Marianna Pascal | TEDxPenangRoad</p>
+    </div>
+  </div>
+
+  <div class="column cars">
+    <div class="content">
+      <img src="ASSEST/IMAGE/book_atomic.jpg" alt="Car" style="width:100%">
+      <h4>Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones</h4>
+      <p>No matter your goals, Atomic Habits offers a proven framework for improving—every day. James Clear, one of the world's leading experts on habit formation, reveals practical strategies that will teach you exactly how to form good habits, break bad ones, and master the tiny behaviors that lead to remarkable results.
+</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="ASSEST/IMAGE/book_theart.jpg" alt="Car" style="width:100%">
+      <h4>The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life</h4>
+      <p>In this generation-defining self-help guide, a superstar blogger cuts through the crap to show us how to stop trying to be "positive" all the time so that we can truly become better, happier people.</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+    <img src="ASSEST/IMAGE/book_nabi.jpg" style="width:100%">
+      <h4>Muhammad: Riwayat Hidup Berdasarkan Sumber Terawal</h4>
+      <p>Biografi ini merupakan salah satu biografi Nabi Muhammad SAW yang terbaik pernah diterbitkan. Dengan gaya penulisan yang mudah difahami serta bahasa yang indah, Martin Lings menghadirkan kepada pembaca riwayat hidup Nabi Muhammad SAW dengan terperinci. Selain sisi peribadi baginda, biografi ini turut menyentuh aspek sosial, ekonomi dan politik pada zaman tersebut. Ditulis mengunakan sumber-sumber yang sahih dan sudah meraih banyak anugerah di peringkat antarabangsa, biografi ini adalah sebuah buku yang wajib dimiliki setiap orang.</p>
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+      <img src="ASSEST/IMAGE/podcast_drhar.jpg" alt="Car" style="width:100%">
+      <h4>Keramat HAMKA - Akademi Dr Har</h4>
+     <audio controls width=""><source src="ASSEST/AUDIO/Audio_Siar_Akademi_Dr_Har_Keramat_HAMKA.mp3" type="audio/mp3">
+</audio>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="ASSEST/IMAGE/podcast_psych.jpg" alt="Car" style="width:100%">
+      <h4>8 Ways to Become More Emotionally Mature - Psych2go</h4>
+      <audio controls width=""><source src="ASSEST/AUDIO/8_Ways_to_Become_More_Emotionally_Mature.mp3" type="audio/mp3">
+</audio>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+    <img src="ASSEST/IMAGE/podcast_ted.png" alt="Car" style="width:100%">
+      <h4>How to Get Your Brain to Focus - Chris Bailey</h4>
+     <audio controls width=""><source src="ASSEST/AUDIO/How_to_Get_Your_Brain_to_Focus_Chris_Bailey_TEDxManches.mp3" type="audio/mp3">
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+<center><a href="index.html">
+ <img src="ASSEST/IMAGE/gif_walk.gif" width="200px">
+ </a>
+<p><font color="grey">"let's go home"-Totoro-<font color="grey"></p></center>
+
+</body>
+<head>
+</html>
